@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Metadados e Favicon -->
+    <title>Doce e Sabor - Confeitaria Artesanal</title>
+    <link rel="icon" type="image/png" href="logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Cabeçalho & Navegação Sticky -->
+    <header>
+        <div class="logo-container">
+            <img src="logo.png" alt="Doce e Sabor Logo" class="logo-img">
+            <h1>doce e sabor</h1>
+            <p class="subtitulo">CONFEITARIA ARTESANAL</p>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#cardapio">Cardápio</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#contato">Encomendas</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Banner Principal de Impacto (Hero Section) -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h2>Momentos especiais pedem doces inesquecíveis</h2>
+            <p>Feitos à mão com ingredientes selecionados, técnica refinada e muito carinho para o seu evento.</p>
+            <a href="#contato" class="btn-principal">Fazer Pedido de Encomenda</a>
+        </div>
+    </section>
+
+    <!-- Seção do Cardápio (Produtos / Serviços) -->
+    <section id="cardapio" class="secao">
+        <div class="titulo-secao">
+            <h2>Nosso Cardápio</h2>
+            <p>Escolha suas delícias favoritas elaboradas artesanalmente</p>
+        </div>
+
+        <h3 class="categoria-titulo">🍰 Tortinhas & Doces Finos</h3>
+        <div class="cardapio-grid">
+            <div class="card-doce">
+                <span class="badge">Mais Vendido</span>
+                <div class="card-info">
+                    <h4>🍓 Torta de Frutas Vermelhas</h4>
+                    <p class="descricao">Massa crocante de baunilha, creme patissière e seleção de frutas frescas.</p>
+                    <span class="preco">R$ 16,00</span>
+                </div>
+            </div>
+
+            <div class="card-doce">
+                <div class="card-info">
+                    <h4>🍋 Tortinha de Limão Siciliano</h4>
+                    <p class="descricao">Mousse leve de limão com merengue suíço maçaricado.</p>
+                    <span class="preco">R$ 14,00</span>
+                </div>
+            </div>
+
+            <div class="card-doce">
+                <span class="badge novidade">Novidade</span>
+                <div class="card-info">
+                    <h4>🍫 Bombom Dourado de Pistache</h4>
+                    <p class="descricao">Casquinha de chocolate branco recheada com brigadeiro gourmet de pistache.</p>
+                    <span class="preco">R$ 6,50 <small>/unid</small></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Galeria de Imagens com Legendas (Figure e Figcaption) -->
+    <section id="galeria" class="secao">
+        <div class="titulo-secao">
+            <h2>Galeria de Criações</h2>
+            <p>Conheça um pouco do nosso trabalho artesanal</p>
+        </div>
+        <div class="galeria-grid">
+            <figure class="galeria-item">
+                <img src="https://images.unsplash.com/photo-1587314168485-3236d6710814?w=500&auto=format&fit=crop" alt="Tortinha de Frutas">
+                <figcaption>Tortinhas Finas para Eventos</figcaption>
+            </figure>
+            <figure class="galeria-item">
+                <img src="https://images.unsplash.com/photo-1578985545062-69928b1d9587?w=500&auto=format&fit=crop" alt="Bolo Decorado">
+                <figcaption>Bolo Festivo de Chocolate</figcaption>
+            </figure>
+            <figure class="galeria-item">
+                <img src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500&auto=format&fit=crop" alt="Pães e Doces">
+                <figcaption>Massa Folhada Artesanal</figcaption>
+            </figure>
+            <figure class="galeria-item">
+                <img src="https://images.unsplash.com/photo-1535141192574-5d4897c13136?w=500&auto=format&fit=crop" alt="Macarons">
+                <figcaption>Macarons Coloridos Gourmet</figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <!-- Seção Quem Somos -->
+    <section id="sobre" class="secao sobre-bg">
+        <div class="titulo-secao">
+            <h2>Nossa História</h2>
+        </div>
+        <p class="texto-destaque">
+            A <strong>Doce e Sabor</strong> nasceu da paixão da chef confeiteira em transformar ingredientes selecionados em memórias inesquecíveis. Desde 2020, produzimos cada doce artesanalmente, aliando técnicas clássicas da confeitaria ao carinho de um atendimento feito sob medida para suas comemorações.
+        </p>
+    </section>
+
+    <!-- Formulário de Contato / Agendamento -->
+    <section id="contato" class="secao">
+        <div class="titulo-secao">
+            <h2>Agende sua Encomenda</h2>
+            <p>Preencha os dados abaixo e entraremos em contato para confirmar seu pedido.</p>
+        </div>
+
+        <form class="form-agendamento" action="#" method="POST">
+            <div class="form-group">
+                <label for="nome">Nome Completo:</label>
+                <input type="text" id="nome" name="nome" placeholder="Seu nome" required>
+            </div>
+
+            <div class="form-group">
+                <label for="email">E-mail Corporativo / Pessoal:</label>
+                <input type="email" id="email" name="email" placeholder="seuemail@exemplo.com" required>
+            </div>
+
+            <div class="form-group">
+                <label for="data-entrega">Data Desejada para Entrega/Retirada:</label>
+                <input type="date" id="data-entrega" name="data-entrega" required>
+            </div>
+
+            <div class="form-group">
+                <label for="mensagem">Detalhes do Pedido:</label>
+                <textarea id="mensagem" name="mensagem" rows="4" placeholder="Descreva os produtos e quantidade desejada..."></textarea>
+            </div>
+
+            <button type="submit" class="btn-submit">Enviar Pedido de Agendamento</button>
+        </form>
+    </section>
+
+    <!-- Botão Flutuante do WhatsApp -->
+    <a href="https://wa.me/5500000000000" class="whatsapp-fixo" target="_blank" rel="noopener noreferrer" title="Fale pelo WhatsApp">
+        💬
+    </a>
+
+    <!-- BANNER DE AVISO DE COOKIES -->
+    <div id="banner-cookies" class="banner-cookies">
+        <p>
+            Utilizamos cookies para personalizar sua experiência. Ao continuar navegando, você concorda com a nossa política.
+        </p>
+        <button id="btn-aceitar-cookies" class="btn-cookies">Entendi e Aceito</button>
+    </div>
+
+    <!-- Rodapé Completo -->
+    <footer>
+        <div class="footer-links">
+            <a href="#inicio">Início</a> | 
+            <a href="#cardapio">Cardápio</a> | 
+            <a href="#sobre">Sobre Nós</a> | 
+            <a href="https://www.instagram.com" target="_blank" rel="noopener noreferrer">Nosso Instagram ↗</a>
+        </div>
+        <p>&copy; 2026 Doce e Sabor - Confeitaria Artesanal. Todos os direitos reservados.</p>
+    </footer>
+
+    <!-- JavaScript dos Cookies -->
+    <script>
+        const bannerCookies = document.getElementById('banner-cookies');
+        const btnAceitar = document.getElementById('btn-aceitar-cookies');
+
+        const cookiesAceitos = localStorage.getItem('cookiesAceitos');
+
+        if (cookiesAceitos === 'sim') {
+            bannerCookies.classList.add('oculto');
+        }
+
+        btnAceitar.addEventListener('click', () => {
+            localStorage.setItem('cookiesAceitos', 'sim');
+            bannerCookies.classList.add('oculto');
+        });
+    </script>
+
+</body>
+</html>
